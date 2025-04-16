@@ -85,7 +85,7 @@ parcial=int(input())
 print("ingrese total")
 total=int(input())
 
-r=(parcial*100)/total
+r=(parcial*total)/100
 print("el porcentaje es:",r,"%")
 eje8()
 
