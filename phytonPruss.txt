@@ -91,10 +91,11 @@ def eje9():
 
     a=array%10000
     xd=array//10000
-    xd%10000==0
+    xd%10000
     d=xd//100
     m2=xd%100
     print("el dia es:",d,"el mes es",m2,"el año es",a)
+
 
 def eje10():
     print("ingrese nota del examen parcial")
