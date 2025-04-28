@@ -111,10 +111,17 @@ eje10()
 def eje11():
     print("ingrese numero de autos")
 n1=int(input())
-print("ingrese valor de la unidad")
-n2=float(input())
 
-salario=5500+(n1*200)+(n2*0.05)
+print("ingrese cuantos valores de autos quiere ingresar")
+n2=int(input())
+s=0
+for i in range (n2):
+    print("ingrese valor de un auto")
+    n3=float(input())
+    s+=n3
+
+
+salario=5500+(n1*200)+(s*0.05)
 print("el salario es:",salario)
 eje11()
 
