@@ -38,17 +38,20 @@ eje4()
 
 def eje5():
     print("ingrese una hora")
-num1=int(input())
-print("ingrese minutos")
-num2=int(input())
-print("ingrese segundos")
-num3=int(input())
+    num1=int(input())
+    print("ingrese minutos")
+    num2=int(input())
+    print("ingrese segundos")
+    num3=int(input())
 
-r1=num1*3600
-print("horas a segundos",r1)
-r2=num2*60
-print("horas a minutos",r2)
-print("segundos a segundos",num3)
+    r1=num1*3600
+    r2=num2*60
+
+    ola=r1+r2+num3
+
+    print("segundos totales", ola)
+
+
 eje5()
 
 def eje6():
@@ -61,22 +64,14 @@ print("superficie del triangulo:",r)
 eje6()
 
 def eje7():
-    print("ingrese un numero1")
-num1=int(input())
-print("ingrese un numero2")
-num2=int(input())
-print("ingrese un numero3")
-num3=int(input())
-print("ingrese un numero4")
-num4=int(input())
-print("ingrese un numero5")
-num5=int(input())
-print("ingrese un numero6")
-num6=int(input())
+    print("ingrese 6 numeros")
+    s=0
+    for i in range(6):
+        n=float(input())
+        s+=n
+    p=s/6
+    print("el promedio es:",p)
 
-r=num1+num2+num3+num4+num4+num5+num6
-p=r/6
-print("el promedio es:",p)
 eje7()
 
 def eje8():
@@ -85,19 +80,21 @@ parcial=int(input())
 print("ingrese total")
 total=int(input())
 
-r=(parcial*total)/100
+r=(parcial*100)/total
 print("el porcentaje es:",r,"%")
 eje8()
 
 def eje9():
     print("elegi una fecha")
-array=[]
-array=input()
+    array=[8]
+    array=int(input())
 
-print("el dia es:",array[0],array[1])
-print("el mes es:",array[2],array[3])
-print("el año es:",array[4],array[5],array[6],array[7])
-eje9()
+    a=array%10000
+    xd=array//10000
+    xd%10000==0
+    d=xd//100
+    m2=xd%100
+    print("el dia es:",d,"el mes es",m2,"el año es",a)
 
 def eje10():
     print("ingrese nota del examen parcial")
@@ -119,3 +116,4 @@ n2=float(input())
 salario=5500+(n1*200)+(n2*0.05)
 print("el salario es:",salario)
 eje11()
+
